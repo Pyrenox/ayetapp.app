@@ -163,6 +163,14 @@ var AyetI18n = (function () {
       if (d[k] != null) el.textContent = d[k];
     });
     var vt = document.querySelector('.verse .tr'); if (vt) vt.style.display = lang === 'ar' ? 'none' : '';
+    // Mağaza bağlantıları seçili dilde açılsın (Apple web sayfası ülke/dil yoksa İngilizce açılıyor)
+    var cc = { tr: 'tr', en: 'us', de: 'de', fr: 'fr', nl: 'nl', ar: 'sa', id: 'id' }[lang] || 'us';
+    document.querySelectorAll('[data-store="ios"]').forEach(function (el) {
+      el.href = 'https://apps.apple.com/' + cc + '/app/id6833613165?l=' + lang;
+    });
+    document.querySelectorAll('[data-store="android"]').forEach(function (el) {
+      el.href = 'https://play.google.com/store/apps/details?id=com.alitutal.ayetapp&hl=' + lang;
+    });
     // Telefonun mağazası öne gelsin
     document.querySelectorAll('.stores').forEach(function (box) {
       var a = box.querySelector('[data-store="android"]');
