@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayet'i indir</title>
+<meta name="description" content="Ayet: Namaz vakti, ezan, Kur'an ve günün ayeti. Android ve iPhone için ücretsiz.">
+<meta property="og:title" content="Ayet: Namaz Vakti, Ezan ve Kur'an">
+<meta property="og:description" content="Her gün size özel bir ayet, namaz vakitleri, ezan, Kur'an ve dualar. Android ve iPhone için ücretsiz.">
+<meta property="og:image" content="https://ayetapp.app/img/og.jpg">
+<meta property="og:url" content="https://ayetapp.app/indir/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0f1a2b">
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/style.css">
+<script>
+  // Paylaşılan bağlantı: Android → Google Play, iPhone → App Store, diğerleri → ana sayfa
+  (function () {
+    var ua = navigator.userAgent;
+    var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (/Android/i.test(ua)) location.replace('https://play.google.com/store/apps/details?id=com.alitutal.ayetapp');
+    else if (ios) location.replace('https://apps.apple.com/app/id6833613165');
+    else location.replace('/');
+  })();
+</script>
+</head>
+<body>
+<main class="doc" style="text-align:center;padding-top:60px">
+  <img src="/img/icon.webp" alt="Ayet" width="96" height="96" style="border-radius:22px">
+  <h1>Ayet</h1>
+  <div class="stores">
+    <a class="store" href="https://apps.apple.com/app/id6833613165"><span>App Store</span></a>
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.alitutal.ayetapp"><span>Google Play</span></a>
+  </div>
+</main>
+</body>
+</html>
